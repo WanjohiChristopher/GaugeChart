@@ -1,10 +1,10 @@
-import dash
-from dash.dependencies import Input, Output
-import dash_daq as daq
-import dash_core_components as dcc
-import dash_html_components as html
 
-app = dash.Dash(__name__)
+from dash import Dash, html, dcc
+import dash_bootstrap_components as dbc
+from dash.dependencies import Output, Input
+import dash_daq as daq
+from dash import Dash, html, dcc
+app = daq.Dash(__name__)
 
 app.layout = html.Div([
     daq.Gauge(
